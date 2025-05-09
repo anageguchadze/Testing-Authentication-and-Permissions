@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r'private-items', PrivateItemViewSet, basename='private-item')
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]
